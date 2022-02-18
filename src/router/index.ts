@@ -6,7 +6,6 @@ import Pricing from "@/views/Pricing.vue";
 import FAQ from "@/views/FAQ.vue";
 import Blog from "@/views/Blog.vue";
 
-
 const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
