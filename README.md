@@ -1,4 +1,4 @@
-# vuejs-practice
+# Finsweet-VueJS
 
 ## Project setup
 ```
