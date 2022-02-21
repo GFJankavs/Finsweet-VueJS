@@ -202,9 +202,9 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import Card from "@/components/Card.vue";
 import processData, { ProcessDataType } from "@/data/processData";
 import { benefitsData, CardType } from "@/data/cardData";
+import Card from "@/components/Card.vue";
 import membersData, { MembersDataType } from "@/data/membersData";
 
 export default defineComponent({
@@ -226,58 +226,47 @@ export default defineComponent({
 .section {
   padding: 128px 0;
 }
-
 .section__team {
   background-color: $grey;
 }
-
 .section__mission {
   background-color: $accent;
 }
-
 .hero {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .hero__image {
   width: 100%;
   max-width: 550px;
 }
-
 .hero__content {
   width: 100%;
   max-width: 600px;
 }
-
 .hero__heading {
   margin: 10px 0 30px;
 }
-
 .identity__content {
   background-color: #f4f5f5;
   padding: 80px;
 }
-
 .content__container {
   display: flex;
   flex-wrap: wrap;
   gap: 60px;
   padding-top: 10px;
 }
-
 .content__wrapper {
   width: 100%;
   max-width: 515px;
   display: grid;
   gap: 16px;
 }
-
 .content__title {
   color: $blueDark;
 }
-
 .identity__image-wrapper {
   width: 100%;
   height: 340px;
@@ -285,22 +274,18 @@ export default defineComponent({
   display: flex;
   align-items: center;
 }
-
 .identity__image {
   width: 100%;
 }
-
 .process {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 48px;
 }
-
 .process__heading {
   text-align: center;
 }
-
 .process__container {
   display: grid;
   justify-content: center;
@@ -308,12 +293,10 @@ export default defineComponent({
   grid-template-columns: repeat(auto-fill, 270px);
   gap: 60px;
 }
-
 .process__card {
   display: grid;
   gap: 32px 0;
 }
-
 .card__top {
   width: 100%;
   height: auto;
@@ -321,33 +304,28 @@ export default defineComponent({
   align-items: center;
   justify-content: space-between;
 }
-
 .card__bottom {
   display: grid;
   gap: 10px 0;
 }
-
 .card__circle {
   width: 24px;
   height: 24px;
   border-radius: 50%;
   background-color: $blueRoyal;
 }
-
 .card__dotted {
   border: 2px dashed #2405f2;
   opacity: 0.4;
   width: 100%;
   max-width: 224px;
 }
-
 .mission {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 96px 0;
 }
-
 .mission__wrapper {
   display: flex;
   align-items: center;
@@ -355,20 +333,17 @@ export default defineComponent({
   flex-direction: row;
   flex-wrap: wrap;
   gap: 30px 140px;
-
   &:nth-of-type(even) {
     flex-wrap: wrap;
     flex-direction: row-reverse;
   }
 }
-
 .mission__content {
   width: 100%;
   max-width: 620px;
   display: grid;
   gap: 16px 0;
 }
-
 .mission__image-wrapper {
   width: 100%;
   max-width: 515px;
@@ -379,23 +354,19 @@ export default defineComponent({
   justify-content: center;
   align-items: center;
 }
-
 .mission__image {
   width: 100%;
 }
-
 .benefits {
   display: grid;
   justify-items: center;
   gap: 48px 0;
 }
-
 .benefits__heading {
   text-align: center;
   width: 100%;
   max-width: 630px;
 }
-
 .benefits__container {
   display: grid;
   grid-template-columns: repeat(auto-fill, 405px);
@@ -403,48 +374,39 @@ export default defineComponent({
   justify-content: center;
   width: 100%;
 }
-
 .benefits__card {
   background-color: $grey;
 }
-
 .benefits__extras {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
 }
-
 .extras__right {
   display: flex;
   align-items: center;
 }
-
 .extras__logo {
   margin-left: 60px;
-
   &:first-of-type {
     margin-left: 0;
   }
 }
-
 .team__heading {
   text-align: center;
 }
-
 .team__member-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, 300px);
   justify-content: center;
   margin-top: 48px;
 }
-
 .team__member {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 .member__image-container {
   width: 100%;
   max-width: 168px;
@@ -457,18 +419,15 @@ export default defineComponent({
   align-items: center;
   justify-content: center;
   z-index: 1;
-
   &:hover {
     .member__link-wrapper {
       display: flex;
     }
   }
 }
-
 .member__image {
   width: 100%;
 }
-
 .member__link-wrapper {
   position: absolute;
   top: 0;
@@ -479,27 +438,26 @@ export default defineComponent({
   display: none;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(348.37deg, #5239FA 17.97%, rgba(255, 255, 255, 0) 79.2%);
+  background: linear-gradient(
+    348.37deg,
+    #5239fa 17.97%,
+    rgba(255, 255, 255, 0) 79.2%
+  );
 }
-
 .member__link-container {
   position: absolute;
   bottom: 28px;
 }
-
 .member__icon {
   margin-left: 12px;
   transition: opacity 0.4s ease-in-out;
-
   &:hover {
     opacity: 0.8;
   }
-
   &:first-of-type {
     margin-left: 0;
   }
 }
-
 .member__text-container {
   margin-top: 30px;
   display: grid;

@@ -1,4 +1,4 @@
-const faqData = [
+const faqDataOne = [
   {
     id: 1,
     title: "How much time does it take?",
@@ -36,7 +36,7 @@ const faqData = [
   },
 ];
 
-export default faqData;
+export default faqDataOne;
 
 export interface FaqDataType {
   id: number;
