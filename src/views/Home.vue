@@ -95,17 +95,10 @@
           </h2>
         </div>
         <div class="features__content">
-          <div
-            class="card"
-            v-for="feature of featuresData"
-            :key="feature.title"
-          >
-            <img :src="feature.image" alt="card_logo" class="card__logo" />
-            <h6 class="heading__6 card__heading">{{ feature.title }}</h6>
-            <p class="body__1">
-              {{ feature.text }}
-            </p>
-          </div>
+          <Card
+            :cardData="features"
+            className="features__card"
+          />
         </div>
       </div>
     </div>
@@ -313,8 +306,9 @@ import { defineComponent } from "vue";
 import axios from "axios";
 import HeroBox from "@/components/HeroBox.vue";
 import Button from "@/components/Button.vue";
+import Card from "@/components/Card.vue";
 import { workData, WorkDataType } from "@/data/workData";
-import { featuresData, FeaturesDataType } from "@/data/featuresData";
+import { featuresData, CardType } from "@/data/cardData";
 import { UserDataType } from "@/data/usersData";
 import faqData, { FaqDataType } from "@/data/faqData";
 import blogData, { BlogDataType } from "@/data/blogData";
@@ -324,11 +318,12 @@ export default defineComponent({
   components: {
     HeroBox,
     Button,
+    Card,
   },
   data: () => {
     return {
       workData: workData as WorkDataType[],
-      featuresData: featuresData as FeaturesDataType[],
+      features: featuresData as CardType[],
       userData: [] as UserDataType[],
       testimonialIndex: 0,
       faqData: faqData as FaqDataType[],
@@ -463,22 +458,8 @@ export default defineComponent({
   gap: 24px 32px;
 }
 
-.card {
-  color: $blueDark;
+.features__card {
   background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: 60px 48px 48px;
-}
-
-.card__logo {
-  width: 100%;
-  max-width: 32px;
-}
-
-.card__heading {
-  margin: 22px 0 12px;
 }
 
 .testimonials {
