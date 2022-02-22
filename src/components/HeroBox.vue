@@ -1,19 +1,17 @@
 <template>
   <div class="herobox">
-    <div class="container">
-      <div class="herobox__text-container">
-        <h1 class="heading__1 herobox__heading">{{ title }}</h1>
-        <p class="body__2 herobox__text">{{ heroText }}</p>
-        <div class="herobox__button-container">
-          <Button :text="buttonTextOne" classname="button button--light"></Button>
-          <router-link class="herobox__link" v-if="buttonTextTwo" to="/pricing"
-          >{{ buttonTextTwo
-            }}<span class="herobox__arrow">&#129042;</span></router-link
-          >
-        </div>
+    <div class="herobox__text-container">
+      <h1 class="heading__1 herobox__heading">{{ title }}</h1>
+      <p class="body__2 herobox__text">{{ heroText }}</p>
+      <div class="herobox__button-container">
+        <Button :text="buttonTextOne" classname="button button--light"></Button>
+        <router-link class="herobox__link" v-if="buttonTextTwo" to="/pricing"
+        >{{ buttonTextTwo
+          }}<span class="herobox__arrow">&#129042;</span></router-link
+        >
       </div>
-      <img src="../assets/herobox_1.png" alt="Herobox 1" class="herobox__image" />
     </div>
+    <img :src="require(`../assets/${heroImage}`)" alt="Herobox 1" class="herobox__image" />
   </div>
 </template>
 
@@ -48,9 +46,9 @@ export default defineComponent({
 
 <style lang="scss">
 .herobox {
-  background-color: $blueTint;
-  width: 100%;
-  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .herobox__container {
@@ -59,6 +57,8 @@ export default defineComponent({
 
 .herobox__text-container {
   text-align: left;
+  width: 100%;
+  max-width: 580px;
 }
 
 .herobox__text {
@@ -67,6 +67,7 @@ export default defineComponent({
 
 .herobox__image {
   width: 100%;
+  max-width: 630px;
 }
 
 .herobox__link {

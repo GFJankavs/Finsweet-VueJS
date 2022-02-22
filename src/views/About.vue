@@ -182,9 +182,21 @@
               <div class="member__link-wrapper">
                 <div class="member__link-container">
                   <a href="https://www.facebook.com/">
-                    <img src="@/assets/icon_fb.svg" alt="icon_facebook" class="member__icon" />
-                    <img src="@/assets/icon_tw.svg" alt="icon_twitter" class="member__icon" />
-                    <img src="@/assets/icon_in.svg" alt="icon_linkedin" class="member__icon" />
+                    <img
+                      src="@/assets/icon_fb.svg"
+                      alt="icon_facebook"
+                      class="member__icon"
+                    />
+                    <img
+                      src="@/assets/icon_tw.svg"
+                      alt="icon_twitter"
+                      class="member__icon"
+                    />
+                    <img
+                      src="@/assets/icon_in.svg"
+                      alt="icon_linkedin"
+                      class="member__icon"
+                    />
                   </a>
                 </div>
               </div>
@@ -333,6 +345,7 @@ export default defineComponent({
   flex-direction: row;
   flex-wrap: wrap;
   gap: 30px 140px;
+
   &:nth-of-type(even) {
     flex-wrap: wrap;
     flex-direction: row-reverse;

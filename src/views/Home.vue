@@ -1,10 +1,15 @@
 <template>
-  <HeroBox
-    title="Building stellar websites for early startups"
-    hero-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
-    button-text-one="View our work"
-    button-text-two="View Pricing"
-  ></HeroBox>
+  <div class="section section__herobox">
+    <div class="container">
+      <HeroBox
+        title="Building stellar websites for early startups"
+        hero-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+        button-text-one="View our work"
+        button-text-two="View Pricing"
+        hero-image="herobox_1.png"
+      ></HeroBox>
+    </div>
+  </div>
   <div class="work">
     <div class="container">
       <div class="work__wrapper">
@@ -95,10 +100,7 @@
           </h2>
         </div>
         <div class="features__content">
-          <Card
-            :cardData="features"
-            className="features__card"
-          />
+          <Card :cardData="features" className="features__card" />
         </div>
       </div>
     </div>
@@ -372,6 +374,11 @@ export default defineComponent({
 </script>
 
 <style lang="scss">
+.section__herobox {
+  background-color: $blueTint;
+  color: #fff;
+}
+
 .work {
   background-color: $grey;
 }
