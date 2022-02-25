@@ -1,5 +1,9 @@
 # Finsweet-VueJS
 
+Unfinished Figma Template project made in VueJS.
+
+Test out the website here: 
+
 ## Project setup
 ```
 npm install
