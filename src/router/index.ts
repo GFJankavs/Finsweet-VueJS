@@ -5,7 +5,6 @@ import Features from "@/views/Features.vue";
 import Pricing from "@/views/Pricing.vue";
 import FAQ from "@/views/FAQ.vue";
 import Blog from "@/views/Blog.vue";
-import Work from "@/views/Work.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -41,11 +40,6 @@ const routes: Array<RouteRecordRaw> = [
     path: "/blog",
     name: "Blog",
     component: Blog,
-  },
-  {
-    path: "/work",
-    name: "Work",
-    component: Work,
   },
   // {
   //   path: "/about",
