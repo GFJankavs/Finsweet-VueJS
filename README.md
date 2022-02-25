@@ -2,7 +2,7 @@
 
 Unfinished Figma Template project made in VueJS.
 
-Test out the website [here](frosty-visvesvaraya-bacbf1.netlify.app).
+Test out the website [here](https://frosty-visvesvaraya-bacbf1.netlify.app/home).
 
 ## Project setup
 ```
