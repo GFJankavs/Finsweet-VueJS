@@ -1,5 +1,9 @@
 # Finsweet-VueJS
 
+Unfinished Figma Template project made in VueJS.
+
+Test out the website [here](frosty-visvesvaraya-bacbf1.netlify.app).
+
 ## Project setup
 ```
 npm install
